@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    text-align: center;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+.container {
+    background: fixed;
+    height: 100px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 50px;
+}
+
+.container .ball {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    height: 90px;
+    width: 90px;
+    background: black;
+    border: 5px dotted red;
+    transition: 1s;
+    transform: rotate(180deg);
+
+}
+.container .ball1 {
+    position: relative;
+    padding-top: 30px;
+    height: 90px;
+    width: 90px;
+}
+
+.transition:hover .ball {
+    transform: translate(500px);
+    border-radius: 90px;
+    background: fixed;
+}
+
+.animation .ball1 {
+    position: relative;
+    animation-name: bouncing;
+    animation: bouncing 3s linear infinite;
+    border: 30px solid red;
+
+}
+
+@keyframes bouncing {
+    0% {
+        background: #FF8080;
+        top: 0px;
+        border: 1px solid red;
+    }
+
+    25% {
+        background: #FFCF96;
+        top: 200px;
+        box-shadow: 0 0 50px 0px black;
+        transform: rotate(180deg) scale(0.5);
+    }
+
+    75% {
+        background: #CDFAD5;
+        top: 50px;
+        
+    }
+
+    100% {
+        background: blue;
+        transform: translate(500px);
+        top: 200px;
+        border-radius: 50px;
+    }
+
+
+
+
+
+}
+
+
+
